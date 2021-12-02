@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Change calculator/styling.css">
     <title>Change calculator</title>
 </head>
 <body>
+
+    <div class="container">
+        <h1>Change calculator</h1>
+
+        <p>Enter the bill amount and the amount paid and calculate the denomination the customer should recieve</p>
+
+        <p id="errorMessage"></p>
+
+        <label for="billAmount">Bill amount</label>
+        <input type="number" id="billAmount">
+        <button id="next">Next</button>
+        
+        <div class="blockOne container">
+            <label for="amountRecieved">Amount paid</label>
+            <input type="number" id="amountRecieved">
+            <button id="change">change</button>
     
+            
+            <div class="blockTwo container">
+                <p id="diff"></p>
+                <table>
+                    <tr>
+                        <th>Currency</th>
+                        <td>2000</td>
+                        <td>500</td>
+                        <td>100</td>
+                        <td>50</td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+        
+                    <tr>
+                        <th>Amount</th>
+                        <td class="noOfNotes"></td>
+                        <td class="noOfNotes"></td>
+                        <td class="noOfNotes"></td>
+                        <td class="noOfNotes"></td>
+                        <td class="noOfNotes"></td>
+                        <td class="noOfNotes"></td>
+                        <td class="noOfNotes"></td>
+                        <td class="noOfNotes"></td>
+                        <td class="noOfNotes"></td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script src="/Change calculator/main.js"></script>
 </body>
 </html>
